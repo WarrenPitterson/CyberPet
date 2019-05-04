@@ -25,7 +25,12 @@ namespace CyberPet.Business.Logic.Interactions
         {
             petStatus.Tiredness -= 40;
             return petStatus;
+        }
 
+        public CyberPetStatus TalkToThePet(CyberPetStatus petStatus)
+        {
+            petStatus.Tiredness += 20;
+            return petStatus;
         }
     }
 }
