@@ -41,8 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CatCyberPetInteractions.cs" />
-    <Compile Include="ICyberPetInteractions.cs" />
+    <Compile Include="Interactions\CatCyberPetInteractions.cs" />
+    <Compile Include="Interactions\ICyberPetInteractions.cs" />
+    <Compile Include="Interactions\MumLikeCyberInteraction.cs" />
     <Compile Include="Models\CyberPetStatus.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

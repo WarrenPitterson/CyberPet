@@ -1,4 +1,5 @@
 using CyberPet.Business.Logic;
+using CyberPet.Business.Logic.Interactions;
 using CyberPet.Business.Logic.Models;
 using System;
 using Xunit;
@@ -43,6 +44,17 @@ namespace CyberPet.UnitTests
 
             Assert.Equal(80, cat.Hunger);
         }
-    }
 
+        [Fact]
+        public void WhenMumFeedsTheCatTheHungerGoesReallyDown()
+        {
+            var cat = new CyberPetStatus();
+
+            var interaction = new MumLikeCyberInteraction();
+
+            interaction.Eat(cat);
+
+            Assert.Equal(60, cat.Hunger);
+        }
+    }
 }
