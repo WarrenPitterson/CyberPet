@@ -11,6 +11,5 @@ namespace CyberPet.Business.Logic.Models
         public int Hunger = 100;
         public int Tiredness = 100;
         public int Boredom = 100;
-
     }
 }

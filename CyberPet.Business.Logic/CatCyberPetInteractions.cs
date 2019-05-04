@@ -9,14 +9,16 @@ namespace CyberPet.Business.Logic
 {
     public class CatCyberPetInteractions : ICyberPetInteractions
     {
-        public string Eat(CyberPetStatus petStatus)
+        public CyberPetStatus Eat(CyberPetStatus petStatus)
         {
-            throw new NotImplementedException();
+            petStatus.Hunger -=20;
+            return petStatus;
         }
 
-        public string Play(CyberPetStatus petStatus)
+        public CyberPetStatus Play(CyberPetStatus petStatus)
         {
-            throw new NotImplementedException();
+            petStatus.Boredom -= 20;
+            return petStatus;
         }
 
         public CyberPetStatus Sleep(CyberPetStatus petStatus)

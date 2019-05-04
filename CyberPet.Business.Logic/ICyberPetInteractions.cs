@@ -9,8 +9,8 @@ namespace CyberPet.Business.Logic
 {
     public interface ICyberPetInteractions
     {
-        string Play(CyberPetStatus petStatus);
+        CyberPetStatus Play(CyberPetStatus petStatus);
         CyberPetStatus Sleep(CyberPetStatus petStatus);
-        string Eat(CyberPetStatus petStatus);
+        CyberPetStatus Eat(CyberPetStatus petStatus);
     }
 }
