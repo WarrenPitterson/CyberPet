@@ -18,7 +18,7 @@ namespace CyberPet.UnitTests.Household
 
             var person = new MumLikeCyberInteraction();
 
-            household.peopleAdd(person);
+            household.PeopleAdd(person);
 
             Assert.Single(household.peopleWhoLiveInTheHouse);
         }
@@ -30,7 +30,7 @@ namespace CyberPet.UnitTests.Household
 
             var talking = new MumLikeCyberInteraction();
 
-            household.peopleAdd(talking);
+            household.PeopleAdd(talking);
 
             household.MumTalkToThePet(household.cat);
 

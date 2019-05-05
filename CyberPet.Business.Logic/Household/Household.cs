@@ -14,7 +14,7 @@ namespace CyberPet.Business.Logic.Household
         public CyberPetStatus cat = new CyberPetStatus();
         public CyberPetStatus giraffe = new CyberPetStatus();
 
-        public void peopleAdd(ICyberPetInteractions person)
+        public void PeopleAdd(ICyberPetInteractions person)
         {
             peopleWhoLiveInTheHouse.Add(person);
         }
